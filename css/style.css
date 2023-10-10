@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS */
+.container {
+    margin: auto;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #383737;
+    height: 60px;
+    width: 100%;
+    padding: 0 20px; /* Adicione algum espaçamento interno para melhor aparência */
+}
+
+.menu-toggle {
+    cursor: pointer; /* Torna o ícone de menu clicável */
+    color: #f7f9fc;
+    font-size: 24px; /* Ajuste o tamanho conforme necessário */
+}
+
+.menu-bar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.barra-pesquisar {
+    display: flex;
+    align-items: center;
+}
+
+.barra-pesquisar i {
+    font-size: 24px;
+    color: #f1f2f3;
+}
+
+.barra-pesquisar div:first-child {
+    margin-right: 20px; /* Adicione algum espaçamento entre a imagem e o campo de pesquisa */
+}
+
+.barra-pesquisar input[type="search"] {
+    margin-right: 20px; /* Adicione algum espaçamento entre a imagem e o campo de pesquisa */
+    width: 400px; /* Defina a largura do campo de pesquisa conforme necessário */
+    padding: 8px; /* Adicione algum espaçamento interno para melhor aparência */
+    border: none;
+    border-radius: 5px;
+}
+
+.cart span {
+    margin-left: 10px; /* Adicione algum espaçamento entre os ícones de usuário e carrinho */
+    font-size: 24px; /* Ajuste o tamanho conforme necessário */
+}
+
+.container-produtos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Define a distância desejada entre os filhos */
+}
+
+.container-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Define a distância desejada entre os produtos */
+}
+
+.produto {
+    flex: 1; /* Torna os produtos flexíveis para ocupar todo o espaço disponível */
+    width: 350px; /* Defina a largura desejada para os produtos */
+    margin-top: 10px; /* Adicione espaço superior entre os produtos */
+    background-color: #b9afaf; /* Defina a cor de fundo desejada para os produtos */
+    /* Outros estilos dos produtos, como flex-direction, altura, etc. */
+}
+
+.produto-card {
+    border: 1px solid #000; /* Defina o estilo da borda desejado */
+    width: 200px; /* Largura do cartão */
+    margin: 10px; /* Espaçamento entre os cartões */
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    border-radius: 10px;
+}
+
+.produto-imagem {
+    width: 100%; /* Ajuste o tamanho da imagem conforme necessário */
+    border-radius: 10px;
+}
+
+.produto-text {
+    font-size: 14px; /* Tamanho do texto */
+    margin: 5px 0; /* Espaçamento entre os textos */
+}
+
+.produto-button {
+    background-color: #333; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.produto-button:hover {
+    background-color: #555; /* Cor de fundo do botão ao passar o mouse */
+}
