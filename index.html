@@ -10,25 +10,35 @@
 <body>
     <div class="container">
         <header class="cabecalho">
-            <span class="menu-toggle"><i class="fa-solid fa-bars" style="color: #e6e8ea;"></i></span>
-            <nav class="menu-bar">
+            <span class="menu-toggle" id="menu-toggle"><i class="fa-solid fa-bars" style="color: #ecbe13; cursor: pointer;"></i></span>
+            <nav class="hide" id="nav-menu">
+                <span id="exit-menu"><i class="fa-solid fa-x"></i></span>
                 <ul>
-
+                    <li>Celulares</li>
+                    <li>Tablets</li>
+                    <li>Acessórios</li>
+                    <li>Capinhas</li>
                 </ul>
             </nav>
 
             <div class="barra-pesquisar">
-                <div><img src="img/terabyte-logo.svg" alt="" width="100px" height="100px"></div>
+                <div><img src="img/novo-logo.jpg" alt="" style="background-color: rgb(255, 232, 30); cursor: pointer; width: 200px; height: 60px;"></div>
 
                 <div>
-                    <input type="search" name="" id="" placeholder="Pesquise o nome do produto"><i class="fa-solid fa-magnifying-glass" style="color: #f1f2f3;"></i>
+                    <input type="search" name="" id="" placeholder="Pesquise o nome do produto"><i class="fa-solid fa-magnifying-glass" style="color: #ecbe13; cursor: pointer;"></i>
                 </div>
             </div>
 
             <div class="cart">
-                <span><i class="fa-regular fa-user" style="color: #f1f2f3;"></i></span>
-                <span><i class="fa-solid fa-cart-shopping" style="color: #f0f2f5;"></i></span>
+                <span class="user" id="user"><i class="fa-regular fa-user" style="color: #ecbe13; cursor: pointer;"></i></span>
+                <span class="cart" id="cart"><i class="fa-solid fa-cart-shopping" style="color: #ecbe13; cursor: pointer;"></i></span>
             </div>
+            
+            <div class="hide" id="cart-comper">
+                <span id="exit-cart"><i class="fa-solid fa-x"></i></span>
+                <!-- Conteúdo do carrinho -->
+            </div>
+            
         </header>
 
         <main class="container-produtos" id="container-produtos">
