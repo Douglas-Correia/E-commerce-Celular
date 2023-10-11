@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #565360;
+    background-color: #738c79;
+}
+
 /* CSS */
 .container {
     margin: auto;
@@ -13,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #383737;
+    background-color: #333;
     height: 60px;
     width: 100%;
     padding: 0 20px; /* Adicione algum espaçamento interno para melhor aparência */
@@ -25,9 +31,52 @@
     font-size: 24px; /* Ajuste o tamanho conforme necessário */
 }
 
+.menu-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #f2f5f5;
+}
+
+.hide{
+    display: none;
+}
+
+.menu-bar span{
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.menu-bar span i{
+    color: #000;
+}
+
+.menu-bar span i:hover{
+    color: #bdc0c298;
+}
 .menu-bar ul {
     list-style: none;
     padding: 0;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+}
+
+.menu-bar ul li{
+    width: 100%;
+    border-bottom: 1px solid #333;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-bar ul li:hover{
+    background-color: #8f9192;
 }
 
 .barra-pesquisar {
@@ -35,9 +84,11 @@
     align-items: center;
 }
 
+.barra-pesquisar input{
+    height:45px;
+}
 .barra-pesquisar i {
     font-size: 24px;
-    color: #f1f2f3;
 }
 
 .barra-pesquisar div:first-child {
@@ -67,17 +118,19 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px; /* Define a distância desejada entre os produtos */
+    margin: 3% 5%;
 }
 
 .produto {
     flex: 1; /* Torna os produtos flexíveis para ocupar todo o espaço disponível */
     width: 350px; /* Defina a largura desejada para os produtos */
     margin-top: 10px; /* Adicione espaço superior entre os produtos */
-    background-color: #b9afaf; /* Defina a cor de fundo desejada para os produtos */
+    background-color: #f2f5f5; /* Defina a cor de fundo desejada para os produtos */
     /* Outros estilos dos produtos, como flex-direction, altura, etc. */
 }
 
 .produto-card {
+    background-color: #f2f5f5;
     border: 1px solid #000; /* Defina o estilo da borda desejado */
     width: 200px; /* Largura do cartão */
     margin: 10px; /* Espaçamento entre os cartões */
@@ -100,14 +153,34 @@
 }
 
 .produto-button {
-    background-color: #333; /* Cor de fundo do botão */
+    background-color: #a43955; /* Cor de fundo do botão */
     color: #fff; /* Cor do texto do botão */
     border: none;
+    border-radius: 5px;
     padding: 5px 10px;
     cursor: pointer;
     font-size: 14px;
+    height: 30px;
+    transition: transform 1s;
 }
 
 .produto-button:hover {
-    background-color: #555; /* Cor de fundo do botão ao passar o mouse */
+    transform: scale(1.04);
+    background-color: #d6496f; /* Cor de fundo do botão ao passar o mouse */
+}
+
+#cart-comper {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #f2f5f5;
+}
+
+.exit-cart{
+    position: absolute;
+    top: 0;
+    right: 20px;
 }
