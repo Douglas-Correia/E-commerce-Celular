@@ -1,32 +1,4 @@
-const produtosCatalogo = [
-    {
-        id: 1,
-        imagem: '../img/Iphones.jpg',
-        nome: 'Produto 1',
-        descricao: 'Descrição do Produto 1',
-        valor: 19.99,
-        tipo: 'celular',
-        marca: 'Samsung'
-    },
-    {
-        id: 2,
-        imagem: '../img/Iphones.jpg',
-        nome: 'Produto 2',
-        descricao: 'Descrição do Produto 2',
-        valor: 29.99,
-        tipo: 'celular',
-        marca: 'Motorola'
-    },
-    {
-        id: 3,
-        imagem: '../img/Iphones.jpg',
-        nome: 'Produto 2',
-        descricao: 'Descrição do Produto 3',
-        valor: 29.99,
-        tipo: 'celular',
-        marca: 'LG'
-    }
-];
+import { produtosCatalogo } from "./catalogo.js";
 
 function renderizarCatalogo(){
     for(const produto of produtosCatalogo){
@@ -41,7 +13,28 @@ function renderizarCatalogo(){
 
         document.querySelector("#container-produtos").innerHTML += cardProdutos;
 }
-
 }
 
 renderizarCatalogo();
+
+// IDS para o menu
+const menuToggle = document.querySelector('#menu-toggle');
+const exitMenu = document.querySelector('#exit-menu');
+const navMenu = document.querySelector('#nav-menu');
+
+menuToggle.addEventListener('click', () =>{
+    navMenu.classList.remove('hide');
+    navMenu.classList.add('menu-bar');
+})
+
+exitMenu.addEventListener('click', () =>{
+    navMenu.classList.remove('menu-bar');
+    navMenu.classList.add('hide');
+})
+
+const idCart = document.querySelector('#cart');
+const idCartComperContainer = document.querySelector('#cart-comper');
+
+idCart.addEventListener('click', () => {
+    idCartComperContainer.style.display = 'block'; // Mostrar o contêiner do carrinho
+});
