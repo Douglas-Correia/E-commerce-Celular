@@ -20,7 +20,7 @@ export const produtosCatalogo = [
     {
         id: 3,
         imagem: '../img/Iphones.jpg',
-        nome: 'Produto 2',
+        nome: 'Produto 3',
         descricao: 'Descrição do Produto 3',
         valor: 29.99,
         tipo: 'celular',
@@ -31,17 +31,26 @@ export const produtosCatalogo = [
         imagem: '../img/Iphones.jpg',
         nome: 'Produto 4',
         descricao: 'Descrição do Produto 4',
+        valor: 7999.00,
+        tipo: 'Celular',
+        marca: 'Iphone'
     },
     {
         id: 5,
         imagem: '../img/Iphones.jpg',
         nome: 'Produto 5',
         descricao: 'Descrição do Produto 5',
+        valor: 7999.00,
+        tipo: 'Celular',
+        marca: 'Iphone'
     },
     {
         id: 6,
         imagem: '../img/Iphones.jpg',
         nome: 'Produto 6',
         descricao: 'Descrição do Produto 6',
+        valor: 7999.00,
+        tipo: 'Celular',
+        marca: 'Iphone'
     },
 ];
